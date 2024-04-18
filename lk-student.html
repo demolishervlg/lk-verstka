@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="easy-responsive-tabs.css">
+    <link rel="stylesheet" href="js/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="scss/popups.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss/popups.css">
+    <title>Личный кабинет</title>
+</head>
+<body>
+<div class="all">
+    <header class="header">
+        <div class="header-wrapper">
+            <div class="header-inner">
+                <div class="header-inner-logo">
+                    <img src="/img/logo.svg" alt="Личный кабинет">
+                </div>
+                <div class="header-inner-menu">
+                    <nav class="menu">
+                        <div class="menu-btn-mobi" onclick="openNav()">
+                            <svg width="30" height="19" viewBox="0 0 30 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0H30V2H0V0Z" fill="white"/>
+                                <path d="M0 8.5H30V10.5H0V8.5Z" fill="white"/>
+                                <path d="M0 17H30V19H0V17Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <ul class="menu-wrapper">
+                            <li class="menu-wrapper-item"><a href="#">Мероприятия</a></li>
+                            <li class="menu-wrapper-item"><a href="#">Рейтинг</a></li>
+                            <li class="menu-wrapper-item"><a href="#">Стажировка</a></li>
+                            <li class="menu-wrapper-item"><a href="#">Образование</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="header-inner">
+                <div class="header-inner-profile">
+                    <div class="status">
+                        <span>Ученик</span>
+                    </div>
+                    <div class="img">
+                        <img src="/img/profile-img.svg">
+                    </div>
+                    <a href="/" class="btn btn-transparent dense">
+                        <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2 6.5C2 4.01472 4.01472 2 6.5 2H12C14.2091 2 16 3.79086 16 6V7C16 7.55228 15.5523 8 15 8C14.4477 8 14 7.55228 14 7V6C14 4.89543 13.1046 4 12 4H6.5C5.11929 4 4 5.11929 4 6.5V17.5C4 18.8807 5.11929 20 6.5 20H12C13.1046 20 14 19.1046 14 18V17C14 16.4477 14.4477 16 15 16C15.5523 16 16 16.4477 16 17V18C16 20.2091 14.2091 22 12 22H6.5C4.01472 22 2 19.9853 2 17.5V6.5ZM18.2929 8.29289C18.6834 7.90237 19.3166 7.90237 19.7071 8.29289L22.7071 11.2929C23.0976 11.6834 23.0976 12.3166 22.7071 12.7071L19.7071 15.7071C19.3166 16.0976 18.6834 16.0976 18.2929 15.7071C17.9024 15.3166 17.9024 14.6834 18.2929 14.2929L19.5858 13L11 13C10.4477 13 10 12.5523 10 12C10 11.4477 10.4477 11 11 11L19.5858 11L18.2929 9.70711C17.9024 9.31658 17.9024 8.68342 18.2929 8.29289Z" fill="#ffffff"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-wrapper">
+
+
+
+            <div class="main-wrapper-lk-top">
+                <div class="main-wrapper-lk-top-wrapper">
+                    <div class="main-wrapper-lk-top-inner left">
+                        <div class="name-and-score">
+                            <div class="name">Иванов Иван</div>
+                            <div class="score">
+                                134 балла
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-wrapper-lk-top-inner center">
+                        <div class="profile-img">
+                            <div class="img">
+                                <div class="favorite active">
+                                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.3786 0.93722C9.59861 0.369561 10.4018 0.369559 10.6218 0.937218L12.5408 5.88852C12.6354 6.13257 12.8641 6.29869 13.1254 6.31324L18.4274 6.60829C19.0352 6.64212 19.2835 7.406 18.8116 7.79066L14.6956 11.1458C14.4927 11.3112 14.4054 11.58 14.4723 11.833L15.8301 16.9666C15.9858 17.5552 15.336 18.0273 14.8243 17.6974L10.3615 14.8197C10.1415 14.6778 9.8589 14.6778 9.63893 14.8197L5.17612 17.6974C4.66446 18.0273 4.01466 17.5552 4.17033 16.9667L5.52812 11.833C5.59504 11.58 5.50771 11.3112 5.30483 11.1458L1.18887 7.79067C0.716979 7.40601 0.96518 6.64212 1.57304 6.60829L6.87502 6.31324C7.13636 6.29869 7.365 6.13257 7.45959 5.88852L9.3786 0.93722Z" fill="#787878"/>
+                                    </svg>
+                                </div>
+                                <img src="/img/photo-profile.png" alt="Фото профиля">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-wrapper-lk-top-inner right">
+                        <div class="status-and-edit">
+                            <div class="status">
+                                Ученик Москва
+                            </div>
+                            <div class="edit">
+                                <button class="btn btn-transparent">
+                                    Редактировать профиль
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-wrapper-lk-top-mobi">
+                    <div class="name">Иванов Иван</div>
+                    <div class="status">Ученик Москва</div>
+                    <div class="edit">
+                        <button class="btn btn-transparent">
+                            Редактировать профиль
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="main-wrapper-lk-tabs">
+                <div id="tabs">
+                    <ul class="resp-tabs-list tab_identifier_parent">
+                        <li> Портфолио </li>
+                        <li> Информация </li>
+                        <li> Мероприятия </li>
+                        <li> Избранное </li>
+                    </ul>
+
+                    <div class="resp-tabs-container tab_identifier_parent">
+                        <div>
+                            <div class="portfolio">
+                                <div class="portfolio-items">
+                                    <div onclick="addPortfolio()" class="portfolio-item">
+                                        <div class="addPortfolio"></div>
+                                    </div>
+                                    <div onclick="clickPortfolio(1)" class="portfolio-item">
+                                        <div class="img">
+                                            <img src="/img/div-status-bg-photo.png" alt="Иллюстрация «Прибытие на остров»">
+                                        </div>
+                                        <div class="title">Иллюстрация «Прибытие на остров»Иллюстрация «Прибытие на остров»Иллюстрация «Прибытие на остров»</div>
+                                        <div class="date">11 декабря 2023</div>
+                                    </div>
+                                    <div onclick="clickPortfolio(1)" class="portfolio-item">
+                                        <div class="img">
+                                            <img src="/img/pdf.svg" alt="Иллюстрация «Прибытие на остров»">
+                                        </div>
+                                        <div class="title">Иллюстрация «Прибытие на остров»Иллюстрация «Прибытие на остров»Иллюстрация «Прибытие на остров»</div>
+                                        <div class="date">11 декабря 2023</div>
+                                    </div>
+                                    <div class="portfolio-item">
+                                        <div class="img">
+                                            <img src="/img/div-status-bg-photo.png" alt="Иллюстрация «Прибытие на остров»">
+                                        </div>
+                                        <div class="title">Иллюстрация «Прибытие на остров»</div>
+                                        <div class="date">11 декабря 2023</div>
+                                    </div>
+                                    <div class="portfolio-item">
+                                        <div class="img">
+                                            <img src="/img/div-status-bg-photo2.png" alt="Иллюстрация «Прибытие на остров»">
+                                        </div>
+                                        <div class="title">Иллюстрация «Прибытие на остров»</div>
+                                        <div class="date">11 декабря 2023</div>
+                                    </div>
+                                    <div class="portfolio-item">
+                                        <div class="img">
+                                            <img src="/img/div-status-bg-photo.png" alt="Иллюстрация «Прибытие на остров»">
+                                        </div>
+                                        <div class="title">Иллюстрация «Прибытие на остров»</div>
+                                        <div class="date">11 декабря 2023</div>
+                                    </div>
+                                    <div class="portfolio-item">
+                                        <div class="img">
+                                            <img src="/img/div-status-bg-photo2.png" alt="Иллюстрация «Прибытие на остров»">
+                                        </div>
+                                        <div class="title">Иллюстрация «Прибытие на остров»</div>
+                                        <div class="date">11 декабря 2023</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="information">
+                                <form action="" class="form">
+                                    <div class="form-fields">
+
+                                        <div class="form-fields-group">
+                                            <div class="form-fields-group-wrapper">
+                                                <div class="form-fields-group-title">
+                                                    Инфо
+                                                </div>
+                                                <div class="text-field label">
+                                                    <div class="text-field__label">
+                                                        Город
+                                                    </div>
+                                                    <input
+                                                            disabled
+                                                            class="text-field__input"
+                                                            placeholder="Ваш e-mail"
+                                                            type="email"
+                                                            name="email"
+                                                            id="name"
+                                                            value="Москва"
+                                                    >
+                                                </div>
+                                                <div class="text-field label">
+                                                    <div class="text-field__label">
+                                                        Направление
+                                                    </div>
+                                                    <input
+                                                            disabled
+                                                            class="text-field__input"
+                                                            placeholder="Ваш e-mail"
+                                                            type="email"
+                                                            name="email"
+                                                            id="name"
+                                                            value="Tourism Discovery Lab"
+                                                    >
+                                                </div>
+                                                <div class="text-field label">
+                                                    <div class="text-field__label">
+                                                        Наставник
+                                                    </div>
+                                                    <input
+                                                            disabled
+                                                            class="text-field__input"
+                                                            placeholder="Ваш e-mail"
+                                                            type="email"
+                                                            name="email"
+                                                            id="name"
+                                                            value="Олег Петрович"
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-fields-group">
+                                            <div class="form-fields-group-wrapper">
+                                                <div class="form-fields-group-title">
+                                                    Контакты
+                                                </div>
+                                                <div class="text-field label">
+                                                    <div class="text-field__label">
+                                                        Город
+                                                    </div>
+                                                    <input
+                                                            disabled
+                                                            class="text-field__input"
+                                                            placeholder="Ваш e-mail"
+                                                            type="email"
+                                                            name="email"
+                                                            id="name"
+                                                            value="Москва"
+                                                    >
+                                                </div>
+                                                <div class="text-field label">
+                                                    <div class="text-field__label">
+                                                        Направление
+                                                    </div>
+                                                    <input
+                                                            disabled
+                                                            class="text-field__input"
+                                                            placeholder="Ваш e-mail"
+                                                            type="email"
+                                                            name="email"
+                                                            id="name"
+                                                            value="Tourism Discovery Lab"
+                                                    >
+                                                </div>
+                                                <div class="text-field label">
+                                                    <div class="text-field__label">
+                                                        Наставник
+                                                    </div>
+                                                    <input
+                                                            disabled
+                                                            class="text-field__input"
+                                                            placeholder="Ваш e-mail"
+                                                            type="email"
+                                                            name="email"
+                                                            id="name"
+                                                            value="Олег Петрович"
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-fields-group">
+                                            <div class="form-fields-group-title">
+                                                Контакты
+                                            </div>
+                                            <div class="form-fields-group-text">
+                                                Информация об ученике, которую он сам напишет о себе, чтобы привлечь внимание работодателя или наставника, который поможет ему развиваться в том направлении, которую он выбрал для себя
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div> ..... </div>
+                        <div>
+                            <div id="ChildTab">
+                                <ul class="resp-tabs-list tab_identifier_child">
+                                    <li> Вакансии </li>
+                                    <li> Образование </li>
+                                </ul>
+
+                                <div class="resp-tabs-container tab_identifier_child">
+                                    <div>
+                                        <div class="favorites">
+                                            <div class="favorite">
+                                                <div class="favorite-inner top">
+                                                    <div class="name">
+                                                        Южный университет (ИУБиП)
+                                                    </div>
+                                                    <div class="desc">
+                                                        Университет
+                                                    </div>
+                                                    <div class="btn-icon">
+                                                        <button class="icon active">
+                                                            <svg width="25" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" d="M7.10156 0.728029C8.202 0.72735 9.28641 0.991789 10.263 1.49897C10.9087 1.83428 11.4946 2.26915 12.0003 2.78562C13.2441 1.51676 14.9792 0.728029 16.8979 0.728029C20.685 0.728029 23.7553 3.79827 23.7553 7.58544C23.7553 10.9132 21.8028 13.9797 19.4895 16.3159C17.1677 18.6606 14.3331 20.4226 12.2743 21.1067C12.096 21.166 11.9034 21.166 11.7251 21.1067C9.66635 20.4226 6.83171 18.6606 4.50993 16.3159C2.19662 13.9797 0.244141 10.9132 0.244141 7.58544C0.244141 3.79848 3.31466 0.728361 7.10156 0.728029Z" fill="#F77F5E"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="favorite-inner bottom">
+                                                    <div class="city">
+                                                        Ростов-на-Дону
+                                                    </div>
+                                                    <a href="#" class="more">
+                                                        Подробнее
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="favorite">
+                                                <div class="favorite-inner top">
+                                                    <div class="name">
+                                                        Южный университет (ИУБиП)
+                                                    </div>
+                                                    <div class="desc">
+                                                        Университет
+                                                    </div>
+                                                    <div class="btn-icon">
+                                                        <button class="icon">
+                                                            <svg width="25" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" d="M7.10156 0.728029C8.202 0.72735 9.28641 0.991789 10.263 1.49897C10.9087 1.83428 11.4946 2.26915 12.0003 2.78562C13.2441 1.51676 14.9792 0.728029 16.8979 0.728029C20.685 0.728029 23.7553 3.79827 23.7553 7.58544C23.7553 10.9132 21.8028 13.9797 19.4895 16.3159C17.1677 18.6606 14.3331 20.4226 12.2743 21.1067C12.096 21.166 11.9034 21.166 11.7251 21.1067C9.66635 20.4226 6.83171 18.6606 4.50993 16.3159C2.19662 13.9797 0.244141 10.9132 0.244141 7.58544C0.244141 3.79848 3.31466 0.728361 7.10156 0.728029Z" fill="#F77F5E"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="favorite-inner bottom">
+                                                    <div class="city">
+                                                        Ростов-на-Дону
+                                                    </div>
+                                                    <a href="#" class="more">
+                                                        Подробнее
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="favorites">
+                                            <div class="favorite">
+                                                <div class="favorite-inner top">
+                                                    <div class="name">
+                                                        Южный университет (ИУБиП)
+                                                    </div>
+                                                    <div class="desc">
+                                                        Университет
+                                                    </div>
+                                                    <div class="btn-icon">
+                                                        <button class="icon active">
+                                                            <svg width="25" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" d="M7.10156 0.728029C8.202 0.72735 9.28641 0.991789 10.263 1.49897C10.9087 1.83428 11.4946 2.26915 12.0003 2.78562C13.2441 1.51676 14.9792 0.728029 16.8979 0.728029C20.685 0.728029 23.7553 3.79827 23.7553 7.58544C23.7553 10.9132 21.8028 13.9797 19.4895 16.3159C17.1677 18.6606 14.3331 20.4226 12.2743 21.1067C12.096 21.166 11.9034 21.166 11.7251 21.1067C9.66635 20.4226 6.83171 18.6606 4.50993 16.3159C2.19662 13.9797 0.244141 10.9132 0.244141 7.58544C0.244141 3.79848 3.31466 0.728361 7.10156 0.728029Z" fill="#F77F5E"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="favorite-inner bottom">
+                                                    <div class="city">
+                                                        Ростов-на-Дону
+                                                    </div>
+                                                    <a href="#" class="more">
+                                                        Подробнее
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-wrapper">
+
+        </div>
+    </footer>
+</div>
+</body>
+<div id="pp-portfolio" class="position-relative d-inline-block zoom-anim-dialog mfp-hide pp-standard">
+    <div class="pp-standard__inner">
+        <div class="pp-content">
+            <div class="portfolio-pop">
+                <div class="portfolio-pop-wrapper">
+                    <div class="title">
+                        Иллюстрация «Прибытие на остров»
+                    </div>
+                    <div class="date">
+                        3 февраля 2024
+                    </div>
+                </div>
+                <div class="portfolio-pop-wrapper">
+                    <div class="img">
+                        <img src="/img/pdf.svg" alt="Иллюстрация «Прибытие на остров»">
+                    </div>
+                    <div class="favorite">
+                        <button class="btn btn-favorite active">
+                            <span class="svg">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.1016 4.72803C11.202 4.72735 12.2864 4.99179 13.263 5.49897C13.9087 5.83428 14.4946 6.26915 15.0003 6.78562C16.2441 5.51676 17.9792 4.72803 19.8979 4.72803C23.685 4.72803 26.7553 7.79827 26.7553 11.5854C26.7553 14.9132 24.8028 17.9797 22.4895 20.3159C20.1677 22.6606 17.3331 24.4226 15.2743 25.1067C15.096 25.166 14.9034 25.166 14.7251 25.1067C12.6664 24.4226 9.83171 22.6606 7.50993 20.3159C5.19662 17.9797 3.24414 14.9132 3.24414 11.5854C3.24414 7.79848 6.31466 4.72836 10.1016 4.72803Z" fill="#F77F5E"/>
+                                </svg>
+                            </span>
+                            Мне нравится
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="pp-add-portfolio" class="position-relative d-inline-block zoom-anim-dialog mfp-hide pp-standard">
+    <div class="pp-standard__inner">
+        <div class="pp-content">
+            <div class="portfolio-add">
+                <div id="uploadFile_Loader" class="upload-zone">
+                    <form class="form-upload" id="uploadForm" method="post" enctype="multipart/form-data">
+                        <div class="upload-zone_dragover">
+                            <p class="title">Перетащите сюда файлы или загрузите через кнопку ниже</p>
+                            <div class="text-field">
+                                <input class="text-field__input" type="text" name="PORTFOLIO_NAME" id="PORTFOLIO_NAME" placeholder="Название" value="">
+                            </div>
+                            <label class="form-upload__label" for="uploadForm_file">
+                                <input type="file" class="form-upload__input" id="uploadForm_File" name="file_name" accept="image/*" aria-describedby="hint">
+                            </label>
+                            <label class="form-upload__label" for="uploadForm_file_submit">
+                                <input class="form-upload__input btn" id="uploadForm_file_submit" type="submit" value="Отправить" aria-describedby="hint">
+                            </label>
+                        </div>
+<!--                        <div class="form-upload__container">-->
+<!--                            <span class="form-upload__hint" id="uploadForm_Hint"></span>-->
+<!--                        </div>-->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/plugins/jquery.js"></script>
+<script type="text/javascript" src="/easyResponsiveTabs.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/magnific-popup/jquery.magnific-popup.js"></script>
+<script type="text/javascript" src="js/popups.js"></script>
+</html>

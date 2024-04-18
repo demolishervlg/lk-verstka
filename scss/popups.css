@@ -1,0 +1,350 @@
+@charset "UTF-8";
+.mfp-bg {
+  transition: all 0.2s ease-in-out;
+  opacity: 0.4 !important;
+}
+
+/*Для fade-эффекта при открытии фото-галереи*/
+html {
+  margin-right: 0 !important;
+  overflow: visible !important;
+}
+
+.mfp-ready .mfp-figure {
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+}
+
+.mfp-container {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.mfp-zoom-in .mfp-figure, .mfp-zoom-in .mfp-iframe-holder .mfp-iframe-scaler {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+.mfp-zoom-in.mfp-bg {
+  background: #e1e1e1;
+}
+
+.mfp-zoom-in.mfp-bg,
+.mfp-zoom-in .mfp-preloader {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.mfp-zoom-in.mfp-image-loaded .mfp-figure, .mfp-zoom-in.mfp-ready .mfp-iframe-holder .mfp-iframe-scaler {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.mfp-bg, .mfp-zoom-in.mfp-ready.mfp-bg,
+.mfp-zoom-in.mfp-ready .mfp-preloader {
+  opacity: 1;
+}
+
+.mfp-zoom-in.mfp-removing .mfp-figure, .mfp-zoom-in.mfp-removing .mfp-iframe-holder .mfp-iframe-scaler {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+  opacity: 0;
+}
+
+.mfp-zoom-in.mfp-removing.mfp-bg,
+.mfp-zoom-in.mfp-removing .mfp-preloader {
+  opacity: 0;
+}
+
+.mfp-iframe-scaler {
+  overflow: visible;
+}
+
+.mfp-zoom-out-cur {
+  cursor: auto;
+}
+
+.mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+  cursor: pointer;
+}
+
+.mfp-zoom-in.mfp-image-loaded .zoom-anim-dialog {
+  opacity: 1 !important;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.mfp-zoom-in.mfp-removing .zoom-anim-dialog {
+  opacity: 0 !important;
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+.mfp-title {
+  font-size: 0.667rem;
+}
+
+.zoom-anim-dialog {
+  left: 50%;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+  width: 550px;
+  margin: 0 auto;
+  margin: 0 0 0 -275px;
+}
+
+.mfp-figure .mfp-close {
+  right: 10px !important;
+  top: 10px !important;
+}
+.mfp-figure .mfp-close:before {
+  color: #111;
+}
+
+.mfp-close {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  opacity: 1;
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  right: 32px !important;
+  top: 56px !important;
+  content: url("/img/close.svg");
+  cursor: pointer;
+}
+.mfp-close:hover {
+  color: #E43636 !important;
+}
+
+.mfp-map-active {
+  overflow: hidden;
+}
+
+.pp-standard {
+  margin: auto;
+  width: 100%;
+  max-width: 840px;
+}
+.pp-standard:has(.portfolio-add) .mfp-close {
+  right: 69px !important;
+  top: 66px !important;
+}
+.pp-standard__inner {
+  position: relative;
+}
+.pp-standard__inner .pp-content {
+  position: relative;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  height: fit-content;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+}
+.pp-standard__inner .pp-content:has(.portfolio-add) {
+  padding: 30px;
+  border-radius: 70px;
+}
+.pp-standard__inner .pp-content .portfolio-pop {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 13px;
+}
+.pp-standard__inner .pp-content .portfolio-pop-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  font-family: var(--font-family);
+}
+.pp-standard__inner .pp-content .portfolio-pop-wrapper .title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 110%;
+  color: #1F1F1F;
+}
+.pp-standard__inner .pp-content .portfolio-pop-wrapper .date {
+  font-weight: 400;
+  font-size: 16px;
+  color: #787878;
+}
+.pp-standard__inner .pp-content .portfolio-pop-wrapper .img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.pp-standard__inner .pp-content .portfolio-pop-wrapper .img img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pp-standard__inner .pp-content .portfolio-add .form-upload {
+  display: grid;
+  align-items: center;
+  width: 100%;
+}
+.pp-standard__inner .pp-content .portfolio-add .upload-zone_dragover {
+  padding: 80px 20px 40px;
+  display: grid;
+  min-height: 360px;
+  border: 1px dashed #BCBCBC;
+  border-radius: 70px;
+  color: #0a0808;
+  font-weight: 500;
+  font-size: 18px;
+  place-content: center;
+  text-align: center;
+  gap: 37px;
+  justify-items: center;
+}
+.pp-standard__inner .pp-content .portfolio-add .upload-zone_dragover .text-field {
+  width: 100%;
+  margin-top: 0;
+}
+.pp-standard__inner .pp-content .portfolio-add .upload-zone_dragover .title {
+  max-width: 290px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.05em;
+  text-align: center;
+  color: #787878;
+}
+.pp-standard__inner .pp-content .portfolio-add .form-upload__hint {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.pp-standard__inner .pp-content .portfolio-add .form-upload__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.pp-standard__inner .pp-content .portfolio-add .form-upload__title {
+  margin-right: 55px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.pp-standard__inner .pp-content .portfolio-add .form-upload__input {
+  font-size: 18px;
+  width: 100%;
+}
+.pp-standard__inner .pp-content .portfolio-add .form-upload__input.btn {
+  height: auto;
+}
+.pp-standard__inner .pp-content .portfolio-add .form-upload__input::file-selector-button {
+  margin-right: 30px;
+  border: none;
+  font-family: inherit;
+  font-weight: inherit;
+  transition: background-color 0.2s linear;
+  cursor: pointer;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 14px 10px;
+  background: linear-gradient(218deg, #fe7062 0%, #ff928e 100%);
+  content: "fs";
+}
+.pp-standard__inner .pp-content .portfolio-add .form-upload__container {
+  width: 360px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+.pp-standard__inner .pp-content .portfolio-add .upload-zone_gragover {
+  background-color: #593273;
+}
+.pp-standard__inner .pp-content .portfolio-add .upload-hint,
+.pp-standard__inner .pp-content .portfolio-add .upload-status {
+  width: 75%;
+}
+.pp-standard__inner .pp-content .portfolio-add .upload-hint {
+  display: none;
+}
+.pp-standard__inner .pp-content .portfolio-add .upload-hint_visible {
+  display: block;
+  pointer-events: none;
+}
+.pp-standard__inner .pp-content .portfolio-add .upload-loader {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.pp-standard__inner .pp-content .portfolio-add .upload-loader_visible {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #593273;
+}
+.pp-standard__inner .pp-content .portfolio-add .upload-loader__image {
+  width: 150px;
+  height: 150px;
+}
+@media (max-width: 768px) {
+  .pp-standard__inner .pp-content .portfolio-add .form-upload__title {
+    display: block;
+    margin-right: 0;
+  }
+  .pp-standard__inner .pp-content .portfolio-add .form-upload__input::file-selector-button {
+    min-width: initial;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 420px) {
+  .pp-standard__inner .pp-content:has(.portfolio-add) {
+    padding: 5px;
+    border-radius: 40px;
+  }
+  .pp-standard__inner .pp-content:has(.portfolio-add) .upload-zone_dragover {
+    padding: 40px 20px 40px;
+    border-radius: 40px;
+  }
+}
+
+@media (max-width: 1024.98px) {
+  .mfp-wrap {
+    overflow: auto;
+  }
+}
+@media (max-width: 420px) {
+  .mfp-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .pp-standard:has(.portfolio-add) .mfp-close {
+    right: 19px !important;
+    top: 16px !important;
+  }
+}
+
+/*# sourceMappingURL=popups.css.map */
