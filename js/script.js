@@ -14,6 +14,25 @@ $(function() {
         let file = this.files[0];
         $(this).next().html(file.name);
     });
+
+    $(document).ready(function() {
+        $('.js-road').select2({
+            minimumResultsForSearch: Infinity
+        });
+    });
+
+    $(document).ready(function() {
+        $('.js-city').select2({
+            minimumResultsForSearch: Infinity
+        });
+    });
+
+    $(document).ready(function() {
+        $('.js-work').select2({
+            minimumResultsForSearch: Infinity
+        });
+    });
+
 });
 let flip = 0;
 function openNav() {

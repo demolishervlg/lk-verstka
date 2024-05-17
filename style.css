@@ -917,6 +917,172 @@
   line-height: 100%;
   color: #787878;
 }
+.main-wrapper-works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 0 20px;
+}
+.main-wrapper-works .title {
+  padding-top: 40px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 60px;
+  text-align: center;
+  color: #1F1F1F;
+  line-height: 100%;
+}
+.main-wrapper-works .sub-title {
+  max-width: 500px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.05em;
+  text-align: center;
+  color: #787878;
+}
+.main-wrapper-works .works {
+  width: 100%;
+  padding-top: 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.main-wrapper-works .works-filter {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+}
+.main-wrapper-works .works-filter .form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  overflow: auto;
+  width: 100%;
+}
+.main-wrapper-works .works-filter .form .select2-container {
+  width: 100% !important;
+}
+.main-wrapper-works .works-filter .form .select2-container--default .select2-selection--single {
+  border: 1px solid #1F1F1F;
+  border-radius: 39px;
+  padding: 16px 25px 13px 25px;
+  width: fit-content;
+  height: 51px;
+}
+.main-wrapper-works .works-filter .form .select2-container--default .select2-selection--single .select2-selection__rendered {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  color: #1F1F1F;
+}
+.main-wrapper-works .works-filter .form .select2-container--open .select2-selection--single {
+  border: 1px solid #F77F5E !important;
+  background: #F77F5E;
+}
+.main-wrapper-works .works-filter .form .select2-container--open .select2-selection--single .select2-selection__rendered {
+  color: #ffffff;
+}
+.main-wrapper-works .works-filter .form .select2-container .select2-selection--single .select2-selection__rendered {
+  padding-left: unset;
+  padding-right: 10px;
+  line-height: 100%;
+}
+.main-wrapper-works .works-filter .form .select2-selection__arrow {
+  top: 11px;
+  right: 10px;
+}
+.main-wrapper-works .works-filter .form .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+  border-color: transparent transparent #fff transparent;
+}
+.main-wrapper-works .works-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 27px;
+}
+.main-wrapper-works .works-item {
+  background: #ececec;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 43px;
+}
+.main-wrapper-works .works-item-inner.top {
+  display: grid;
+  grid-template-columns: 1fr 30px;
+  align-items: start;
+  font-weight: 500;
+  grid-template-rows: repeat(3, auto);
+  gap: 8px;
+}
+.main-wrapper-works .works-item-inner.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main-wrapper-works .works-item-inner .name {
+  font-family: var(--font-family);
+  font-size: 18px;
+  line-height: 100%;
+  color: #1F1F1F;
+  grid-area: 1/1/2/2;
+}
+.main-wrapper-works .works-item-inner .desc {
+  font-family: var(--font-family);
+  font-size: 12px;
+  text-decoration-skip-ink: none;
+  color: #BCBCBC;
+  grid-area: 2/1/3/2;
+  line-height: 100%;
+}
+.main-wrapper-works .works-item-inner .working {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: -0.05em;
+  color: #787878;
+  grid-area: 3/1/4/2;
+  line-height: 100%;
+}
+.main-wrapper-works .works-item-inner .btn-icon {
+  grid-area: 1/2/4/3;
+}
+.main-wrapper-works .works-item-inner .btn-icon button.icon {
+  cursor: pointer;
+  border: none;
+  background: #ececec;
+}
+.main-wrapper-works .works-item-inner .btn-icon button.icon svg path {
+  transition: all 0.2s;
+  fill: #ececec;
+  stroke: #787878;
+}
+.main-wrapper-works .works-item-inner .btn-icon button.icon.active svg path {
+  transition: all 0.2s;
+  fill: #F77F5E;
+  stroke: #F77F5E;
+}
+.main-wrapper-works .works-item-inner .city {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 10px;
+  color: #787878;
+}
+.main-wrapper-works .works-item-inner .more {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 10px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-align: right;
+  color: #080213;
+}
 
 @media (max-width: 1024px) {
   .main-wrapper-lk-tabs #tabs .resp-tabs-container {
@@ -938,6 +1104,9 @@
     gap: 24px;
   }
   .main-wrapper-events .title {
+    font-size: 40px;
+  }
+  .main-wrapper-works .title {
     font-size: 40px;
   }
   .main-wrapper-event-detail-top-wrapper .title {
@@ -1091,6 +1260,15 @@
   }
   .main-wrapper-events .title {
     font-size: 30px;
+  }
+  .main-wrapper-works {
+    padding: 0 10px;
+  }
+  .main-wrapper-works .title {
+    font-size: 30px;
+  }
+  .main-wrapper-works .works {
+    gap: 32px;
   }
   .main-wrapper-event-detail {
     position: relative;
@@ -1798,6 +1976,42 @@ form .input-file:active span {
 }
 form .input-file input[type=file]:disabled + span {
   background-color: #eee;
+}
+
+.select2-container--open .select2-dropdown--below {
+  margin-top: 5px;
+  border-radius: 15px !important;
+  border: 1px solid #F77F5E !important;
+  background: #F77F5E;
+}
+
+.select2-results__option--selectable {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  height: 35px;
+  padding: 12px 0;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+}
+.select2-results__option--selectable:first-child {
+  border-bottom: unset;
+  border-top-left-radius: 15px !important;
+  border-top-right-radius: 15px !important;
+}
+.select2-results__option--selectable:last-child {
+  border-bottom: unset;
+  border-bottom-left-radius: 15px !important;
+  border-bottom-right-radius: 15px !important;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: #dc5029 !important;
+}
+
+.select2-container--default .select2-results__option--selected {
+  background-color: #dc5029 !important;
 }
 
 /*# sourceMappingURL=style.css.map */
