@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="easy-responsive-tabs.css">
+    <link rel="stylesheet" href="js/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="scss/popups.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss/popups.css">
+    <title>Личный кабинет</title>
+</head>
+<body>
+<div class="all">
+    <header class="header">
+        <div class="header-wrapper">
+            <div class="header-inner">
+                <div class="header-inner-logo">
+                    <img src="/img/logo.svg" alt="Личный кабинет">
+                </div>
+                <div class="header-inner-menu">
+                    <nav class="menu">
+                        <div class="menu-btn-mobi" onclick="openNav()">
+                            <svg width="30" height="19" viewBox="0 0 30 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0H30V2H0V0Z" fill="white"/>
+                                <path d="M0 8.5H30V10.5H0V8.5Z" fill="white"/>
+                                <path d="M0 17H30V19H0V17Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <ul class="menu-wrapper">
+                            <li class="menu-wrapper-item"><a href="#">Мероприятия</a></li>
+                            <li class="menu-wrapper-item"><a href="#">Рейтинг</a></li>
+                            <li class="menu-wrapper-item"><a href="#">Стажировка</a></li>
+                            <li class="menu-wrapper-item"><a href="#">Образование</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="header-inner">
+                <div class="header-inner-profile">
+                    <div class="status">
+                        <span>Ученик</span>
+                    </div>
+                    <div class="img">
+                        <img src="/img/profile-img.svg">
+                    </div>
+                    <a href="/" class="btn btn-transparent dense">
+                        <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2 6.5C2 4.01472 4.01472 2 6.5 2H12C14.2091 2 16 3.79086 16 6V7C16 7.55228 15.5523 8 15 8C14.4477 8 14 7.55228 14 7V6C14 4.89543 13.1046 4 12 4H6.5C5.11929 4 4 5.11929 4 6.5V17.5C4 18.8807 5.11929 20 6.5 20H12C13.1046 20 14 19.1046 14 18V17C14 16.4477 14.4477 16 15 16C15.5523 16 16 16.4477 16 17V18C16 20.2091 14.2091 22 12 22H6.5C4.01472 22 2 19.9853 2 17.5V6.5ZM18.2929 8.29289C18.6834 7.90237 19.3166 7.90237 19.7071 8.29289L22.7071 11.2929C23.0976 11.6834 23.0976 12.3166 22.7071 12.7071L19.7071 15.7071C19.3166 16.0976 18.6834 16.0976 18.2929 15.7071C17.9024 15.3166 17.9024 14.6834 18.2929 14.2929L19.5858 13L11 13C10.4477 13 10 12.5523 10 12C10 11.4477 10.4477 11 11 11L19.5858 11L18.2929 9.70711C17.9024 9.31658 17.9024 8.68342 18.2929 8.29289Z" fill="#ffffff"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-wrapper">
+            <div class="main-wrapper-works-detail">
+                <div class="main-wrapper-works-detail-top">
+                    <div class="main-wrapper-works-detail-top-wrapper grid">
+                        <div class="img">
+                            <img src="/img/v1.png" alt="">
+                        </div>
+                        <div class="title">
+                            Бухгалтер в “Банк Центр-инвест”
+                        </div>
+                        <div class="desc">
+                            Вакансия <score>134 балла</score>
+                        </div>
+                    </div>
+                    <div class="main-wrapper-works-detail-top-wrapper">
+                        <div class="btns">
+                            <button class="share">
+                                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.7072 8.29298L11.7071 0.292794C11.5673 0.152981 11.3891 0.0577724 11.1952 0.0192039C11.0012 -0.0193645 10.8002 0.000438961 10.6175 0.0761108C10.4348 0.151783 10.2786 0.279925 10.1687 0.444339C10.0588 0.608753 10.0001 0.802056 10.0001 0.999811V4.54489C7.26837 4.79769 4.72928 6.06079 2.87972 8.08701C1.03016 10.1132 0.00327177 12.7567 0 15.5002V17.0002C0.000157857 17.2078 0.0649104 17.4102 0.185276 17.5793C0.305642 17.7484 0.475654 17.8759 0.671733 17.944C0.867811 18.0122 1.08024 18.0176 1.27954 17.9596C1.47885 17.9016 1.65516 17.783 1.78402 17.6202C2.76373 16.4551 3.9658 15.497 5.32 14.8018C6.6742 14.1065 8.15338 13.6882 9.6711 13.5711C9.7211 13.5651 9.84611 13.5551 10.0001 13.5451V17.0002C10.0001 17.1979 10.0588 17.3912 10.1687 17.5557C10.2786 17.7201 10.4348 17.8482 10.6175 17.9239C10.8002 17.9996 11.0012 18.0194 11.1952 17.9808C11.3891 17.9422 11.5673 17.847 11.7071 17.7072L19.7072 9.70702C19.8947 9.51949 20 9.26517 20 9C20 8.73483 19.8947 8.48052 19.7072 8.29298ZM12.0001 14.5861V12.5001C12.0001 12.2349 11.8948 11.9805 11.7072 11.793C11.5197 11.6054 11.2653 11.5001 11.0001 11.5001C10.7451 11.5001 9.7041 11.5501 9.4381 11.5851C6.74293 11.8334 4.17746 12.8574 2.05202 14.5331C2.29327 12.3275 3.33958 10.2884 4.99061 8.80616C6.64164 7.32393 8.78137 6.50279 11.0001 6.49994C11.2653 6.49994 11.5197 6.39458 11.7072 6.20704C11.8948 6.0195 12.0001 5.76514 12.0001 5.49992V3.41387L17.5862 9L12.0001 14.5861Z" fill="#787878" />
+                                </svg>
+                            </button>
+                            <button class="btn btn-favorite active">
+                                <span class="svg">
+                                    <svg width="30px" height="30px" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.1016 4.72803C11.202 4.72735 12.2864 4.99179 13.263 5.49897C13.9087 5.83428 14.4946 6.26915 15.0003 6.78562C16.2441 5.51676 17.9792 4.72803 19.8979 4.72803C23.685 4.72803 26.7553 7.79827 26.7553 11.5854C26.7553 14.9132 24.8028 17.9797 22.4895 20.3159C20.1677 22.6606 17.3331 24.4226 15.2743 25.1067C15.096 25.166 14.9034 25.166 14.7251 25.1067C12.6664 24.4226 9.83171 22.6606 7.50993 20.3159C5.19662 17.9797 3.24414 14.9132 3.24414 11.5854C3.24414 7.79848 6.31466 4.72836 10.1016 4.72803Z" fill="#F77F5E"/>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="btn sign">
+                                Откликнуться
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-wrapper-works-detail-desc">
+                    <div class="main-wrapper-works-detail-desc-contact">
+                        <div class="main-wrapper-works-detail-desc-contact-item">
+                            <div class="name">Организатор:</div>
+                            <div class="value">Иванов Иван Иванович</div>
+                        </div>
+                        <div class="main-wrapper-works-detail-desc-contact-item">
+                            <div class="name">Номер для связи:</div>
+                            <div class="value">+7 937 320 32 32</div>
+                        </div>
+                    </div>
+                    <div class="main-wrapper-works-detail-desc-items">
+                        <div class="main-wrapper-works-detail-desc-item">
+                            <div class="name">
+                                Основные задачи:
+                            </div>
+                            <div class="value">
+                                <ul>
+                                    <li>Загрузка банковских выписок, разноска в программу 1С.</li>
+                                    <li>Формирование актов сверок с покупателями, реализация услуг, поступление товаров, услуг.</li>
+                                    <li>Выставление счетов, доверенностей.</li>
+                                    <li>Создание заказов на отправку закрывающих документов.</li>
+                                    <li>Работа с покупателями по договорам.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="main-wrapper-works-detail-desc-item">
+                            <div class="name">
+                                Наши ожидания от вас:
+                            </div>
+                            <div class="value">
+                                <ul>
+                                    <li>Знание Эксель на отличном уровне</li>
+                                    <li>Знание форм первичных документов, понимание их применения в БУ /НУ</li>
+                                    <li>Умение работать с планом счетов бухгалтерского учета</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="main-wrapper-works-detail-desc-item">
+                            <div class="name">
+                                Мы предлагаем вам:
+                            </div>
+                            <div class="value">
+                                <ul>
+                                    <li>Работу в международной логистической компании.</li>
+                                    <li>График работы: 5/2, с 8-00 до 17-00, выходные дни - суббота и воскресенье</li>
+                                    <li>ЗП: оклад + премия</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-wrapper-works-detail-desc-about">
+                        <div class="title">
+                            О вакансии
+                        </div>
+                        <div class="text">
+                            <img src="/img/Frame92.png" alt="О мероприятии">
+                            <br>
+                            <br>
+                            Конкурс проводится среди учеников 9-11 классов общеобразовательных школ обучающихся в системе среднего профессионального образования. На конкурс должны быть представлены работы, посвященные вопросами истории России с древности до наших дней
+                            <br>
+                            <br>
+                            Условия участия в конкурсе изложены в прикрепленных информационных письмах.
+                            <br>
+                            <br>
+                            Вместе с текстами эссе необходимо заполнить и отослать сканы согласий на обработку персональных данных! Если вам не исполнилось еще 18 лет, попросите ваших родителей или законных представителей заполнить и подписать отдельное согласое. Шаблоны прикреплены в посте группы Вконтакте.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-wrapper">
+
+        </div>
+    </footer>
+</div>
+</body>
+<script type="text/javascript" src="js/plugins/jquery.js"></script>
+<script type="text/javascript" src="/easyResponsiveTabs.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/magnific-popup/jquery.magnific-popup.js"></script>
+<script type="text/javascript" src="js/popups.js"></script>
+</html>
