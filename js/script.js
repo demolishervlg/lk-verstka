@@ -53,18 +53,25 @@ function openNav() {
     });
 }
 
+if(window.innerWidth <= 1300){
+    $('.main-wrapper-rating-tabs-chart').toggle()
+    Object.values(document.getElementsByClassName('open-charts')).forEach(function (item){
+        item.innerText = 'Посмотреть график';
+    })
+}
 $('.open-charts').on('click', function (){
-    $(this).text() == "Скрыть график" ? play_int() : play_pause();
-    $('.main-wrapper-rating-tabs-chart').toggle(  )
+    $(this).text() === 'Скрыть график' ? play_int() : play_pause();
+    $('.main-wrapper-rating-tabs-chart').toggle()
+    $('body').toggleClass("open-chart-pop");
 })
 
 function play_int() {
-    $('#open-charts').text("Посмотреть график");
+    $('.open-charts').text("Посмотреть график");
     // do play
 }
 
 function play_pause() {
-    $('#open-charts').text("Скрыть график");
+    $('.open-charts').text("Скрыть график");
     // do pause
 }
 $( document ).ready(() => {
