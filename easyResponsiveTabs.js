@@ -1,3 +1,7 @@
+setTimeout(() => {
+
+}, 100);
+
 // Easy Responsive Tabs Plugin
 // Author: Samson.Onna <Email : samson3d@gmail.com>
 (function ($) {

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="easy-responsive-tabs.css">
+    <link rel="stylesheet" href="js/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="scss/popups.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss/popups.css">
+    <title>Личный кабинет</title>
+</head>
+<body>
+<div class="all">
+    <header class="header">
+        <div class="header-wrapper">
+            <div class="header-inner">
+                <div class="header-inner-logo">
+                    <img src="/img/logo.svg" alt="Личный кабинет">
+                </div>
+                <div class="header-inner-menu">
+                    <nav class="menu">
+                        <div class="menu-btn-mobi" onclick="openNav()">
+                            <svg width="30" height="19" viewBox="0 0 30 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0H30V2H0V0Z" fill="white"/>
+                                <path d="M0 8.5H30V10.5H0V8.5Z" fill="white"/>
+                                <path d="M0 17H30V19H0V17Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <ul class="menu-wrapper">
+                            <li class="menu-wrapper-item"><a href="#">Мероприятия</a></li>
+                            <li class="menu-wrapper-item"><a href="#">Рейтинг</a></li>
+                            <li class="menu-wrapper-item"><a href="#">Стажировка</a></li>
+                            <li class="menu-wrapper-item"><a href="#">Образование</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="header-inner">
+                <div class="header-inner-profile">
+                    <div class="status">
+                        <span>Ученик</span>
+                    </div>
+                    <div class="img">
+                        <img src="/img/profile-img.svg">
+                    </div>
+                    <a href="/" class="btn btn-transparent dense">
+                        <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2 6.5C2 4.01472 4.01472 2 6.5 2H12C14.2091 2 16 3.79086 16 6V7C16 7.55228 15.5523 8 15 8C14.4477 8 14 7.55228 14 7V6C14 4.89543 13.1046 4 12 4H6.5C5.11929 4 4 5.11929 4 6.5V17.5C4 18.8807 5.11929 20 6.5 20H12C13.1046 20 14 19.1046 14 18V17C14 16.4477 14.4477 16 15 16C15.5523 16 16 16.4477 16 17V18C16 20.2091 14.2091 22 12 22H6.5C4.01472 22 2 19.9853 2 17.5V6.5ZM18.2929 8.29289C18.6834 7.90237 19.3166 7.90237 19.7071 8.29289L22.7071 11.2929C23.0976 11.6834 23.0976 12.3166 22.7071 12.7071L19.7071 15.7071C19.3166 16.0976 18.6834 16.0976 18.2929 15.7071C17.9024 15.3166 17.9024 14.6834 18.2929 14.2929L19.5858 13L11 13C10.4477 13 10 12.5523 10 12C10 11.4477 10.4477 11 11 11L19.5858 11L18.2929 9.70711C17.9024 9.31658 17.9024 8.68342 18.2929 8.29289Z" fill="#ffffff"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-wrapper">
+            <div class="main-wrapper-rating">
+                <div class="title">
+                    Рейтинг
+                </div>
+                <div class="main-wrapper-rating-tabs">
+                    <div class="tabs_parent" id="tabs" data-tabs-id="#tabs">
+                        <ul class="resp-tabs-list tab_identifier_parent">
+                            <li> Neuronexus </li>
+                            <li> Tourism Discovery Lab </li>
+                            <li> Finfactory </li>
+                            <li> Human Space </li>
+                            <li> Pro Project Law </li>
+                            <li> Future Leader </li>
+                        </ul>
+                        <div class="resp-tabs-container tab_identifier_parent">
+                            <div>
+                                <div class="tabs_parent_child" id="ChildTabOne" data-tabs-id="#ChildTabOne">
+                                    <ul class="resp-tabs-list tab_identifier_child">
+                                        <li> Ученики </li>
+                                        <li> Работадатели </li>
+                                        <div class="btns">
+                                            <a class="btn open-charts">Скрыть график</a>
+                                        </div>
+                                    </ul>
+                                    <div class="resp-tabs-container tab_identifier_child">
+                                        <div>
+                                            <div class="child-container">
+                                                <div class="main-wrapper-rating-tabs-items">
+                                                    <div class="main-wrapper-rating-tabs-item">
+                                                        <div class="profile">
+                                                            <div class="img">
+                                                                <img src="/img/photo-profile.png" alt="">
+                                                            </div>
+                                                            <div class="name">
+                                                                Иванов Иван
+                                                            </div>
+                                                            <div class="status">
+                                                                Ученик
+                                                            </div>
+                                                        </div>
+                                                        <div class="desc">
+                                                            <div class="desc-item">
+                                                                <div class="name">
+                                                                    Рейтинг
+                                                                </div>
+                                                                <div class="value">
+                                                                    143 балла
+                                                                </div>
+                                                            </div>
+                                                            <div class="desc-item">
+                                                                <div class="name">
+                                                                    Мероприятия
+                                                                </div>
+                                                                <div class="value">
+                                                                    4
+                                                                </div>
+                                                            </div>
+                                                            <div class="desc-item">
+                                                                <div class="name">
+                                                                    Наставник
+                                                                </div>
+                                                                <div class="value">
+                                                                    Олег Петрович
+                                                                </div>
+                                                            </div>
+                                                            <div class="desc-item red">
+                                                                <div class="name">
+                                                                    Направление
+                                                                </div>
+                                                                <div class="value">
+                                                                    Human space
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="main-wrapper-rating-tabs-chart">
+                                                    <canvas
+                                                            id="myChartOne"
+                                                            class="charts"
+                                                            data-array-chart-name="Артур, Анастасия, Александр"
+                                                            data-array-chart-value="24, 23, 24"
+                                                            data-array-chart-color="#FF6384,#36A2EB,#FFCE56"
+                                                    ></canvas>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="child-container">
+                                                <div class="main-wrapper-rating-tabs-items">
+                                                    <div class="main-wrapper-rating-tabs-item">
+                                                        <div class="profile">
+                                                            <div class="img">
+                                                                <img src="/img/photo-profile.png" alt="">
+                                                            </div>
+                                                            <div class="name">
+                                                                Иванов Иван
+                                                            </div>
+                                                            <div class="status">
+                                                                Ученик
+                                                            </div>
+                                                        </div>
+                                                        <div class="desc">
+                                                            <div class="desc-item">
+                                                                <div class="name">
+                                                                    Рейтинг
+                                                                </div>
+                                                                <div class="value">
+                                                                    143 балла
+                                                                </div>
+                                                            </div>
+                                                            <div class="desc-item">
+                                                                <div class="name">
+                                                                    Мероприятия
+                                                                </div>
+                                                                <div class="value">
+                                                                    4
+                                                                </div>
+                                                            </div>
+                                                            <div class="desc-item">
+                                                                <div class="name">
+                                                                    Наставник
+                                                                </div>
+                                                                <div class="value">
+                                                                    Олег Петрович
+                                                                </div>
+                                                            </div>
+                                                            <div class="desc-item red">
+                                                                <div class="name">
+                                                                    Направление
+                                                                </div>
+                                                                <div class="value">
+                                                                    Human space
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="main-wrapper-rating-tabs-item">
+                                                        <div class="profile">
+                                                            <div class="img">
+                                                                <img src="/img/photo-profile.png" alt="">
+                                                            </div>
+                                                            <div class="name">
+                                                                Иванов Иван
+                                                            </div>
+                                                            <div class="status">
+                                                                Ученик
+                                                            </div>
+                                                        </div>
+                                                        <div class="desc">
+                                                            <div class="desc-item">
+                                                                <div class="name">
+                                                                    Рейтинг
+                                                                </div>
+                                                                <div class="value">
+                                                                    143 балла
+                                                                </div>
+                                                            </div>
+                                                            <div class="desc-item">
+                                                                <div class="name">
+                                                                    Мероприятия
+                                                                </div>
+                                                                <div class="value">
+                                                                    4
+                                                                </div>
+                                                            </div>
+                                                            <div class="desc-item">
+                                                                <div class="name">
+                                                                    Наставник
+                                                                </div>
+                                                                <div class="value">
+                                                                    Олег Петрович
+                                                                </div>
+                                                            </div>
+                                                            <div class="desc-item red">
+                                                                <div class="name">
+                                                                    Направление
+                                                                </div>
+                                                                <div class="value">
+                                                                    Human space
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="main-wrapper-rating-tabs-chart">
+                                                    <canvas
+                                                            id="myChartTwo"
+                                                            class="charts"
+                                                            data-array-chart-name="Артур2, Анастасия2, Александр2"
+                                                            data-array-chart-value="234, 235, 523"
+                                                            data-array-chart-color="#FF6384,#36A2EB,#FFCE56"
+                                                    ></canvas>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="tabs_parent_child" id="ChildTabTwo" data-tabs-id="#ChildTabTwo">
+                                    <ul class="resp-tabs-list tab_identifier_child">
+                                        <li> Ученики </li>
+                                        <li> Работадатели </li>
+                                        <div class="btns">
+                                            <a class="btn open-charts">Скрыть график</a>
+                                        </div>
+                                    </ul>
+                                    <div class="resp-tabs-container tab_identifier_child">
+                                        <div>
+                                            <div class="child-container">
+                                                <div class="main-wrapper-rating-tabs-items">
+                                                    <div class="main-wrapper-rating-tabs-item">
+                                                        <div class="profile">
+                                                            <div class="img">
+                                                                <img src="/img/photo-profile.png" alt="">
+                                                            </div>
+                                                            <div class="name">
+                                                                Иванов Иван
+                                                            </div>
+                                                            <div class="status">
+                                                                Ученик
+                                                            </div>
+                                                        </div>
+                                                        <div class="desc">
+                                                            <div class="desc-item">
+                                                                <div class="name">
+                                                                    Рейтинг
+                                                                </div>
+                                                                <div class="value">
+                                                                    143 балла
+                                                                </div>
+                                                            </div>
+                                                            <div class="desc-item">
+                                                                <div class="name">
+                                                                    Мероприятия
+                                                                </div>
+                                                                <div class="value">
+                                                                    4
+                                                                </div>
+                                                            </div>
+                                                            <div class="desc-item">
+                                                                <div class="name">
+                                                                    Наставник
+                                                                </div>
+                                                                <div class="value">
+                                                                    Олег Петрович
+                                                                </div>
+                                                            </div>
+                                                            <div class="desc-item red">
+                                                                <div class="name">
+                                                                    Направление
+                                                                </div>
+                                                                <div class="value">
+                                                                    Human space
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="main-wrapper-rating-tabs-item">
+                                                        <div class="profile">
+                                                            <div class="img">
+                                                                <img src="/img/photo-profile.png" alt="">
+                                                            </div>
+                                                            <div class="name">
+                                                                Иванов Иван
+                                                            </div>
+                                                            <div class="status">
+                                                                Ученик
+                                                            </div>
+                                                        </div>
+                                                        <div class="desc">
+                                                            <div class="desc-item">
+                                                                <div class="name">
+                                                                    Рейтинг
+                                                                </div>
+                                                                <div class="value">
+                                                                    143 балла
+                                                                </div>
+                                                            </div>
+                                                            <div class="desc-item">
+                                                                <div class="name">
+                                                                    Мероприятия
+                                                                </div>
+                                                                <div class="value">
+                                                                    4
+                                                                </div>
+                                                            </div>
+                                                            <div class="desc-item">
+                                                                <div class="name">
+                                                                    Наставник
+                                                                </div>
+                                                                <div class="value">
+                                                                    Олег Петрович
+                                                                </div>
+                                                            </div>
+                                                            <div class="desc-item red">
+                                                                <div class="name">
+                                                                    Направление
+                                                                </div>
+                                                                <div class="value">
+                                                                    Human space
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="main-wrapper-rating-tabs-chart">
+                                                    <canvas
+                                                            id="myChartTree"
+                                                            class="charts"
+                                                            data-array-chart-name="Артур2, Анастасия2, Александр2"
+                                                            data-array-chart-value="234, 235, 523"
+                                                            data-array-chart-color="#FF6384,#36A2EB,#FFCE56"
+                                                    ></canvas>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="child-container">
+                                                <div class="main-wrapper-rating-tabs-items">
+                                                    <div class="main-wrapper-rating-tabs-item">
+                                                        <div class="profile">
+                                                            <div class="img">
+                                                                <img src="/img/photo-profile.png" alt="">
+                                                            </div>
+                                                            <div class="name">
+                                                                Иванов Иван
+                                                            </div>
+                                                            <div class="status">
+                                                                Ученик
+                                                            </div>
+                                                        </div>
+                                                        <div class="desc">
+                                                            <div class="desc-item">
+                                                                <div class="name">
+                                                                    Рейтинг
+                                                                </div>
+                                                                <div class="value">
+                                                                    143 балла
+                                                                </div>
+                                                            </div>
+                                                            <div class="desc-item">
+                                                                <div class="name">
+                                                                    Мероприятия
+                                                                </div>
+                                                                <div class="value">
+                                                                    4
+                                                                </div>
+                                                            </div>
+                                                            <div class="desc-item">
+                                                                <div class="name">
+                                                                    Наставник
+                                                                </div>
+                                                                <div class="value">
+                                                                    Олег Петрович
+                                                                </div>
+                                                            </div>
+                                                            <div class="desc-item red">
+                                                                <div class="name">
+                                                                    Направление
+                                                                </div>
+                                                                <div class="value">
+                                                                    Human space
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="main-wrapper-rating-tabs-item">
+                                                        <div class="profile">
+                                                            <div class="img">
+                                                                <img src="/img/photo-profile.png" alt="">
+                                                            </div>
+                                                            <div class="name">
+                                                                Иванов Иван
+                                                            </div>
+                                                            <div class="status">
+                                                                Ученик
+                                                            </div>
+                                                        </div>
+                                                        <div class="desc">
+                                                            <div class="desc-item">
+                                                                <div class="name">
+                                                                    Рейтинг
+                                                                </div>
+                                                                <div class="value">
+                                                                    143 балла
+                                                                </div>
+                                                            </div>
+                                                            <div class="desc-item">
+                                                                <div class="name">
+                                                                    Мероприятия
+                                                                </div>
+                                                                <div class="value">
+                                                                    4
+                                                                </div>
+                                                            </div>
+                                                            <div class="desc-item">
+                                                                <div class="name">
+                                                                    Наставник
+                                                                </div>
+                                                                <div class="value">
+                                                                    Олег Петрович
+                                                                </div>
+                                                            </div>
+                                                            <div class="desc-item red">
+                                                                <div class="name">
+                                                                    Направление
+                                                                </div>
+                                                                <div class="value">
+                                                                    Human space
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="main-wrapper-rating-tabs-chart">
+                                                    <canvas
+                                                            id="myChartFour"
+                                                            class="charts"
+                                                            data-array-chart-name="Артур2, Анастасия2, Александр2"
+                                                            data-array-chart-value="234, 235, 523"
+                                                            data-array-chart-color="#FF6384,#36A2EB,#FFCE56"
+                                                    ></canvas>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-wrapper">
+
+        </div>
+    </footer>
+</div>
+</body>
+<script type="text/javascript" src="js/plugins/chart.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.js"></script>
+<script type="text/javascript" src="/easyResponsiveTabs.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/magnific-popup/jquery.magnific-popup.js"></script>
+<script type="text/javascript" src="js/popups.js"></script>
+</html>

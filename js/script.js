@@ -53,26 +53,89 @@ function openNav() {
     });
 }
 
-$("#tabs").easyResponsiveTabs({
-    type: 'default', //Типы: default, vertical, accordion
-    width: 'auto', //auto или любое значение ширины
-    fit: true,   // 100% пространства занимает в контейнере
-    closed: false,
-    tabidentify: 'tab_identifier_parent',
-    activate: function() {} // Функция обратного вызова, используется, когда происходит переключение вкладок
-});
-$("#ChildTab").easyResponsiveTabs({
-    type: 'default', //Типы: default, vertical, accordion
-    width: 'auto', //auto или любое значение ширины
-    fit: true,   // 100% пространства занимает в контейнере
-    closed: false,
-    tabidentify: 'tab_identifier_child',
-    activate: function() {} // Функция обратного вызова, используется, когда происходит переключение вкладок
-});
+$('.open-charts').on('click', function (){
+    $(this).text() == "Скрыть график" ? play_int() : play_pause();
+    $('.main-wrapper-rating-tabs-chart').toggle(  )
+})
+
+function play_int() {
+    $('#open-charts').text("Посмотреть график");
+    // do play
+}
+
+function play_pause() {
+    $('#open-charts').text("Скрыть график");
+    // do pause
+}
+$( document ).ready(() => {
+    let tabs = document.getElementsByClassName('tabs_parent');
+    Object.values(tabs).forEach((item) => {
+        parentEasyTabs(item.getAttribute("data-tabs-id"))
+    })
+
+    let tabs_child = document.getElementsByClassName('tabs_parent_child');
+    Object.values(tabs_child).forEach((item) => {
+        childEasyTabs(item.getAttribute("data-tabs-id"))
+    })
+})
 
 
+function parentEasyTabs (id) {
+    $(id).easyResponsiveTabs({
+        type: 'default', //Типы: default, vertical, accordion
+        width: 'auto', //auto или любое значение ширины
+        fit: true,   // 100% пространства занимает в контейнере
+        closed: false,
+        tabidentify: 'tab_identifier_parent',
+        activate: function() {} // Функция обратного вызова, используется, когда происходит переключение вкладок
+    });
+}
+function childEasyTabs (id) {
+    $(id).easyResponsiveTabs({
+        type: 'default', //Типы: default, vertical, accordion
+        width: 'auto', //auto или любое значение ширины
+        fit: true,   // 100% пространства занимает в контейнере
+        closed: false,
+        tabidentify: 'tab_identifier_child',
+        activate: function() {} // Функция обратного вызова, используется, когда происходит переключение вкладок
+    });
+}
 
 
+$(document).ready(() => {
+    let charts = document.getElementsByClassName('charts');
+    Object.values(charts).forEach((item) => {
+        chartFn(
+            item.getAttribute("id"),
+            item.getAttribute("data-array-chart-name").split(','),
+            item.getAttribute("data-array-chart-value").split(','),
+            item.getAttribute("data-array-chart-color").split(','),
+        );
+    })
+})
+
+function chartFn (id, labels, data, backgroundColors) {
+    var ctx = document.getElementById(id);
+    var myChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: labels,
+            datasets: [{
+                data: data,
+                backgroundColor: backgroundColors,
+            }]
+        },
+        options: {
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                },
+            }
+        }
+    });
+    myChart.canvas.parentNode.style.height = '100%';
+    myChart.canvas.parentNode.style.width = '100%';
+}
 
 
 const dropFileZone = document.querySelector(".upload-zone_dragover")
