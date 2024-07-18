@@ -812,9 +812,6 @@
 .main-wrapper-rating-tabs-chart .btns {
   display: none;
 }
-.main-wrapper-rating-tabs-chart canvas {
-  position: fixed;
-}
 .main-wrapper-events {
   display: flex;
   flex-direction: column;

@@ -1,6 +1,4 @@
 @import "color";
-
-
 .main {
   padding-bottom: 40px;
   &-wrapper{
@@ -658,9 +656,6 @@
           width: 100%;
           .btns{
             display: none;
-          }
-          canvas{
-            position: fixed;
           }
         }
       }
